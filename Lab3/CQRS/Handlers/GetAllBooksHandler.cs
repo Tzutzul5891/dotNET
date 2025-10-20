@@ -1,16 +1,18 @@
-﻿using BookApi.CQRS.Queries;
-using BookApi.Data;
-using BookApi.Models;
+﻿using BookApi.Data;
+using BookApi.CQRS.Queries;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookApi.CQRS.Handlers;
 
-public class GetAllBooksHandler
+public class GetAllBooksHandler(AppDbContext context, ILogger<GetAllBooksHandler> logger)
 {
-    private readonly AppDbContext _context;
-
-    public GetAllBooksHandler(AppDbContext context) => _context = context;
-
-    public async Task<IEnumerable<Book>> Handle(GetAllBooksQuery query)
-        => await _context.Books.AsNoTracking().ToListAsync();
+    public async Task<IResult> Handle()
+    {
+        logger.LogInformation("Fetching all books");
+        
+        var books = await context.Books.AsNoTracking().ToListAsync();
+        
+        logger.LogInformation("Found {BookCount} books", books.Count);
+        return Results.Ok(books);
+    }
 }

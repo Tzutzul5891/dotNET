@@ -1,3 +1,3 @@
 ﻿namespace BookApi.CQRS.Commands;
 
-public record DeleteBookCommand(int Id);
+public record DeleteBookCommand(Guid Id);

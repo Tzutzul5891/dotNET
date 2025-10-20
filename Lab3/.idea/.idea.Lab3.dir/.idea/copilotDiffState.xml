@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/CQRS/Commands/CreateBookCommand.cs">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/CQRS/Commands/CreateBookCommand.cs" />
+              <option name="originalContent" value="using BookApi.Models;&#10;&#10;namespace BookApi.CQRS.Commands;&#10;&#10;public record CreateBookCommand(&#10;    string Title,&#10;    string Author,&#10;    string ISBN,&#10;    BookCategory Category,&#10;    decimal Price,&#10;    DateTime PublishedDate,&#10;    string? CoverImageUrl,&#10;    int StockQuantity&#10;);" />
+              <option name="updatedContent" value="using BookApi.Models;&#10;&#10;namespace BookApi.CQRS.Commands;&#10;&#10;public record CreateBookCommand(&#10;    string Title,&#10;    string Author,&#10;    string ISBN,&#10;    BookCategory Category,&#10;    decimal Price,&#10;    DateTime PublishedDate,&#10;    string? CoverImageUrl,&#10;    int StockQuantity&#10;);" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

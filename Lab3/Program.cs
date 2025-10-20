@@ -1,7 +1,11 @@
 using BookApi.CQRS.Commands;
 using BookApi.CQRS.Handlers;
 using BookApi.CQRS.Queries;
+using BookApi.CQRS.Requests;
 using BookApi.Data;
+using BookApi.Common.Middleware;
+using BookApi.Common.Validators;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,7 +18,11 @@ builder.Services.AddScoped<DeleteBookHandler>();
 builder.Services.AddScoped<GetBookByIdHandler>();
 builder.Services.AddScoped<GetAllBooksHandler>();
 
+builder.Services.AddValidatorsFromAssemblyContaining<CreateBookProfileRequestValidator>();
+
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 using (var scope = app.Services.CreateScope())
 {
@@ -22,28 +30,26 @@ using (var scope = app.Services.CreateScope())
     db.Database.EnsureCreated();
 }
 
-app.MapPost("/books", async (CreateBookCommand cmd, CreateBookHandler handler) =>
+app.MapPost("/books", async (CreateBookProfileRequest req, CreateBookHandler handler) =>
 {
-    var book = await handler.Handle(cmd);
-    return Results.Created($"/books/{book.Id}", book);
+    return await handler.Handle(req);
 });
 
-app.MapGet("/books/{id:int}", async (int id, GetBookByIdHandler handler) =>
+app.MapGet("/books/{id:guid}", async (Guid id, GetBookByIdHandler handler) =>
 {
     var book = await handler.Handle(new GetBookByIdQuery(id));
-    return book is not null ? Results.Ok(book) : Results.NotFound();
+    return Results.Ok(book);
 });
 
 app.MapGet("/books", async (GetAllBooksHandler handler) =>
 {
-    var books = await handler.Handle(new GetAllBooksQuery());
-    return Results.Ok(books);
+    return await handler.Handle();
 });
 
-app.MapDelete("/books/{id:int}", async (int id, DeleteBookHandler handler) =>
+app.MapDelete("/books/{id:guid}", async (Guid id, DeleteBookHandler handler) =>
 {
-    var success = await handler.Handle(new DeleteBookCommand(id));
-    return success ? Results.NoContent() : Results.NotFound();
+    await handler.Handle(new DeleteBookCommand(id));
+    return Results.NoContent();
 });
 
 app.Run();

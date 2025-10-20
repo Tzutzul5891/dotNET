@@ -1,0 +1,185 @@
+2025-10-20 10:44:57.736 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-10-20 10:44:58.038 +03:00 [DBG] Entity Framework Core 9.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.9' with options: None
+2025-10-20 10:44:58.045 +03:00 [DBG] Creating DbConnection.
+2025-10-20 10:44:58.051 +03:00 [DBG] Created DbConnection. (6ms).
+2025-10-20 10:44:58.054 +03:00 [DBG] Opening connection to database 'main' on server 'books.db'.
+2025-10-20 10:44:58.062 +03:00 [DBG] Opened connection to database 'main' on server '/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/books.db'.
+2025-10-20 10:44:58.066 +03:00 [DBG] Disposing connection to database 'main' on server 'books.db'.
+2025-10-20 10:44:58.068 +03:00 [DBG] Disposed connection to database 'main' on server 'books.db' (0ms).
+2025-10-20 10:44:58.071 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-10-20 10:44:58.071 +03:00 [DBG] Creating DbConnection.
+2025-10-20 10:44:58.071 +03:00 [DBG] Created DbConnection. (0ms).
+2025-10-20 10:44:58.073 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-10-20 10:44:58.073 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (3ms).
+2025-10-20 10:44:58.073 +03:00 [DBG] Opening connection to database 'main' on server 'books.db'.
+2025-10-20 10:44:58.074 +03:00 [DBG] Opened connection to database 'main' on server '/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/books.db'.
+2025-10-20 10:44:58.077 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-20 10:44:58.093 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-20 10:44:58.095 +03:00 [DBG] Closing connection to database 'main' on server '/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/books.db'.
+2025-10-20 10:44:58.096 +03:00 [DBG] Closed connection to database 'main' on server 'books.db' (1ms).
+2025-10-20 10:44:58.097 +03:00 [DBG] 'AppDbContext' disposed.
+2025-10-20 10:44:58.098 +03:00 [DBG] Disposing connection to database 'main' on server 'books.db'.
+2025-10-20 10:44:58.098 +03:00 [DBG] Disposed connection to database 'main' on server 'books.db' (0ms).
+2025-10-20 10:44:58.104 +03:00 [INF] Starting web host
+2025-10-20 10:44:58.106 +03:00 [DBG] Hosting starting
+2025-10-20 10:44:58.124 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-10-20 10:44:58.125 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-20 10:44:58.132 +03:00 [INF] Now listening on: http://localhost:5020
+2025-10-20 10:44:58.132 +03:00 [DBG] Loaded hosting startup assembly BookApi
+2025-10-20 10:44:58.132 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-20 10:44:58.132 +03:00 [INF] Hosting environment: Development
+2025-10-20 10:44:58.132 +03:00 [INF] Content root path: /Users/thinslicesacademy17/RiderProjects/dotNET/Lab3
+2025-10-20 10:44:58.133 +03:00 [DBG] Hosting started
+2025-10-20 10:45:07.211 +03:00 [DBG] Connection id "0HNGFLIBCT8LV" accepted.
+2025-10-20 10:45:07.213 +03:00 [DBG] Connection id "0HNGFLIBCT8LV" started.
+2025-10-20 10:45:07.250 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5020/books - application/json 284
+2025-10-20 10:45:07.309 +03:00 [DBG] 1 candidate(s) found for the request path '/books'
+2025-10-20 10:45:07.310 +03:00 [DBG] Request matched endpoint 'HTTP: POST /books'
+2025-10-20 10:45:07.320 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-20 10:45:07.322 +03:00 [INF] Executing endpoint 'HTTP: POST /books'
+2025-10-20 10:45:07.324 +03:00 [DBG] Connection id "0HNGFLIBCT8LV", Request id "0HNGFLIBCT8LV:00000001": started reading request body.
+2025-10-20 10:45:07.325 +03:00 [DBG] Connection id "0HNGFLIBCT8LV", Request id "0HNGFLIBCT8LV:00000001": done reading request body.
+2025-10-20 10:45:07.344 +03:00 [DBG] Entity Framework Core 9.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.9' with options: None
+2025-10-20 10:45:07.404 +03:00 [DBG] Context 'AppDbContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-20 10:45:07.406 +03:00 [DBG] SaveChanges starting for 'AppDbContext'.
+2025-10-20 10:45:07.409 +03:00 [DBG] DetectChanges starting for 'AppDbContext'.
+2025-10-20 10:45:07.426 +03:00 [DBG] DetectChanges completed for 'AppDbContext'.
+2025-10-20 10:45:07.489 +03:00 [DBG] Creating DbConnection.
+2025-10-20 10:45:07.489 +03:00 [DBG] Created DbConnection. (0ms).
+2025-10-20 10:45:07.490 +03:00 [DBG] Opening connection to database 'main' on server 'books.db'.
+2025-10-20 10:45:07.491 +03:00 [DBG] Opened connection to database 'main' on server '/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/books.db'.
+2025-10-20 10:45:07.493 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-10-20 10:45:07.493 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-10-20 10:45:07.496 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2025-10-20 10:45:07.498 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 8), @p2='?' (DbType = Int32), @p3='?' (Size = 47), @p4='?' (DbType = DateTime), @p5='?' (Size = 17), @p6='?' (DbType = Boolean), @p7='?' (DbType = Decimal), @p8='?' (DbType = DateTime), @p9='?' (DbType = Int32), @p10='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Id", "Author", "Category", "CoverImageUrl", "CreatedAt", "ISBN", "IsAvailable", "Price", "PublishedDate", "StockQuantity", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-10-20 10:45:07.504 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 8), @p2='?' (DbType = Int32), @p3='?' (Size = 47), @p4='?' (DbType = DateTime), @p5='?' (Size = 17), @p6='?' (DbType = Boolean), @p7='?' (DbType = Decimal), @p8='?' (DbType = DateTime), @p9='?' (DbType = Int32), @p10='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Books" ("Id", "Author", "Category", "CoverImageUrl", "CreatedAt", "ISBN", "IsAvailable", "Price", "PublishedDate", "StockQuantity", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-10-20 10:45:07.507 +03:00 [DBG] Closing data reader to 'main' on server '/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/books.db'.
+2025-10-20 10:45:07.508 +03:00 [DBG] A data reader for 'main' on server '/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/books.db' is being disposed after spending 3ms reading results.
+2025-10-20 10:45:07.510 +03:00 [DBG] Closing connection to database 'main' on server '/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/books.db'.
+2025-10-20 10:45:07.510 +03:00 [DBG] Closed connection to database 'main' on server 'books.db' (0ms).
+2025-10-20 10:45:07.515 +03:00 [DBG] An entity of type 'Book' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-10-20 10:45:07.516 +03:00 [DBG] SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+2025-10-20 10:45:07.516 +03:00 [INF] Setting HTTP status code 201.
+2025-10-20 10:45:07.521 +03:00 [INF] Writing value of type 'Book' as Json.
+2025-10-20 10:45:07.528 +03:00 [INF] Executed endpoint 'HTTP: POST /books'
+2025-10-20 10:45:07.529 +03:00 [INF] HTTP POST /books responded 201 in 207.8886 ms
+2025-10-20 10:45:07.531 +03:00 [DBG] Connection id "0HNGFLIBCT8LV" completed keep alive response.
+2025-10-20 10:45:07.532 +03:00 [DBG] Connection id "0HNGFLIBCT8LV" received FIN.
+2025-10-20 10:45:07.532 +03:00 [DBG] 'AppDbContext' disposed.
+2025-10-20 10:45:07.532 +03:00 [DBG] Connection id "0HNGFLIBCT8LV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-20 10:45:07.533 +03:00 [DBG] Disposing connection to database 'main' on server 'books.db'.
+2025-10-20 10:45:07.534 +03:00 [DBG] Disposed connection to database 'main' on server 'books.db' (0ms).
+2025-10-20 10:45:07.534 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5020/books - 201 null application/json; charset=utf-8 286.1135ms
+2025-10-20 10:45:07.535 +03:00 [DBG] Connection id "0HNGFLIBCT8LV" disconnecting.
+2025-10-20 10:45:07.535 +03:00 [DBG] Connection id "0HNGFLIBCT8LV" stopped.
+2025-10-20 10:53:22.441 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-10-20 10:53:22.642 +03:00 [DBG] Entity Framework Core 9.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.9' with options: None
+2025-10-20 10:53:22.646 +03:00 [DBG] Creating DbConnection.
+2025-10-20 10:53:22.651 +03:00 [DBG] Created DbConnection. (4ms).
+2025-10-20 10:53:22.654 +03:00 [DBG] Opening connection to database 'main' on server 'books.db'.
+2025-10-20 10:53:22.660 +03:00 [DBG] Opened connection to database 'main' on server '/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/books.db'.
+2025-10-20 10:53:22.661 +03:00 [DBG] Disposing connection to database 'main' on server 'books.db'.
+2025-10-20 10:53:22.663 +03:00 [DBG] Disposed connection to database 'main' on server 'books.db' (0ms).
+2025-10-20 10:53:22.665 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-10-20 10:53:22.665 +03:00 [DBG] Creating DbConnection.
+2025-10-20 10:53:22.665 +03:00 [DBG] Created DbConnection. (0ms).
+2025-10-20 10:53:22.667 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-10-20 10:53:22.667 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (3ms).
+2025-10-20 10:53:22.668 +03:00 [DBG] Opening connection to database 'main' on server 'books.db'.
+2025-10-20 10:53:22.668 +03:00 [DBG] Opened connection to database 'main' on server '/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/books.db'.
+2025-10-20 10:53:22.671 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-20 10:53:22.685 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2025-10-20 10:53:22.686 +03:00 [DBG] Closing connection to database 'main' on server '/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/books.db'.
+2025-10-20 10:53:22.687 +03:00 [DBG] Closed connection to database 'main' on server 'books.db' (1ms).
+2025-10-20 10:53:22.688 +03:00 [DBG] 'AppDbContext' disposed.
+2025-10-20 10:53:22.688 +03:00 [DBG] Disposing connection to database 'main' on server 'books.db'.
+2025-10-20 10:53:22.688 +03:00 [DBG] Disposed connection to database 'main' on server 'books.db' (0ms).
+2025-10-20 10:53:22.694 +03:00 [INF] Starting web host
+2025-10-20 10:53:22.695 +03:00 [DBG] Hosting starting
+2025-10-20 10:53:22.711 +03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-10-20 10:53:22.712 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-20 10:53:22.719 +03:00 [INF] Now listening on: http://localhost:5020
+2025-10-20 10:53:22.719 +03:00 [DBG] Loaded hosting startup assembly BookApi
+2025-10-20 10:53:22.719 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-20 10:53:22.719 +03:00 [INF] Hosting environment: Development
+2025-10-20 10:53:22.719 +03:00 [INF] Content root path: /Users/thinslicesacademy17/RiderProjects/dotNET/Lab3
+2025-10-20 10:53:22.719 +03:00 [DBG] Hosting started
+2025-10-20 10:53:52.139 +03:00 [DBG] Connection id "0HNGFLN7R0J1R" accepted.
+2025-10-20 10:53:52.139 +03:00 [DBG] Connection id "0HNGFLN7R0J1R" started.
+2025-10-20 10:53:52.177 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5020/swagger/v1/swagger - null null
+2025-10-20 10:53:52.224 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger'
+2025-10-20 10:53:52.224 +03:00 [DBG] Request did not match any endpoints
+2025-10-20 10:53:52.235 +03:00 [DBG] The request path /v1/swagger does not match a supported file type
+2025-10-20 10:53:52.238 +03:00 [INF] HTTP GET /swagger/v1/swagger responded 404 in 0.5151 ms
+2025-10-20 10:53:52.243 +03:00 [DBG] Connection id "0HNGFLN7R0J1R" completed keep alive response.
+2025-10-20 10:53:52.244 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5020/swagger/v1/swagger - 404 0 null 70.4084ms
+2025-10-20 10:53:52.246 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5020/swagger/v1/swagger, Response status code: 404
+2025-10-20 10:53:54.743 +03:00 [DBG] Connection id "0HNGFLN7R0J1R" received FIN.
+2025-10-20 10:53:54.747 +03:00 [DBG] Connection id "0HNGFLN7R0J1R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-20 10:53:54.755 +03:00 [DBG] Connection id "0HNGFLN7R0J1R" disconnecting.
+2025-10-20 10:53:54.758 +03:00 [DBG] Connection id "0HNGFLN7R0J1R" stopped.
+2025-10-20 10:54:39.873 +03:00 [DBG] Connection id "0HNGFLN7R0J1S" accepted.
+2025-10-20 10:54:39.885 +03:00 [DBG] Connection id "0HNGFLN7R0J1S" started.
+2025-10-20 10:54:39.892 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5020/swagger/index.html - null null
+2025-10-20 10:54:39.892 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-20 10:54:39.892 +03:00 [DBG] Request did not match any endpoints
+2025-10-20 10:54:39.932 +03:00 [DBG] Connection id "0HNGFLN7R0J1S" completed keep alive response.
+2025-10-20 10:54:39.932 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5020/swagger/index.html - 200 null text/html;charset=utf-8 40.3823ms
+2025-10-20 10:54:39.969 +03:00 [DBG] Connection id "0HNGFLN7R0J1T" accepted.
+2025-10-20 10:54:39.970 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5020/swagger/swagger-ui.css - null null
+2025-10-20 10:54:39.970 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2025-10-20 10:54:39.970 +03:00 [DBG] Request did not match any endpoints
+2025-10-20 10:54:39.970 +03:00 [DBG] Connection id "0HNGFLN7R0J1U" accepted.
+2025-10-20 10:54:39.971 +03:00 [DBG] Connection id "0HNGFLN7R0J1T" started.
+2025-10-20 10:54:39.972 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5020/swagger/swagger-ui-bundle.js - null null
+2025-10-20 10:54:39.972 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2025-10-20 10:54:39.972 +03:00 [DBG] Request did not match any endpoints
+2025-10-20 10:54:39.972 +03:00 [DBG] Connection id "0HNGFLN7R0J1U" started.
+2025-10-20 10:54:39.972 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5020/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-20 10:54:39.973 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-10-20 10:54:39.973 +03:00 [DBG] Request did not match any endpoints
+2025-10-20 10:54:39.993 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-10-20 10:54:39.998 +03:00 [DBG] Connection id "0HNGFLN7R0J1S" completed keep alive response.
+2025-10-20 10:54:39.998 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-10-20 10:54:40.005 +03:00 [DBG] Connection id "0HNGFLN7R0J1U" completed keep alive response.
+2025-10-20 10:54:40.006 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5020/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 33.1291ms
+2025-10-20 10:54:40.006 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5020/swagger/swagger-ui.css - 200 144929 text/css 28.5744ms
+2025-10-20 10:54:40.017 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-10-20 10:54:40.017 +03:00 [DBG] Connection id "0HNGFLN7R0J1T" completed keep alive response.
+2025-10-20 10:54:40.017 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5020/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 45.3643ms
+2025-10-20 10:54:40.127 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5020/swagger/v1/swagger.json - null null
+2025-10-20 10:54:40.129 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-20 10:54:40.129 +03:00 [DBG] Request did not match any endpoints
+2025-10-20 10:54:40.137 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-10-20 10:54:40.141 +03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-10-20 10:54:40.157 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5020/swagger/favicon-32x32.png - null null
+2025-10-20 10:54:40.157 +03:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-10-20 10:54:40.157 +03:00 [DBG] Request did not match any endpoints
+2025-10-20 10:54:40.158 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-10-20 10:54:40.158 +03:00 [DBG] Connection id "0HNGFLN7R0J1U" completed keep alive response.
+2025-10-20 10:54:40.159 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5020/swagger/favicon-32x32.png - 200 628 image/png 2.3105ms
+2025-10-20 10:54:40.234 +03:00 [DBG] Connection id "0HNGFLN7R0J1T" completed keep alive response.
+2025-10-20 10:54:40.234 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5020/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 106.4864ms
+2025-10-20 10:54:44.813 +03:00 [DBG] Connection id "0HNGFLN7R0J1U" received FIN.
+2025-10-20 10:54:44.813 +03:00 [DBG] Connection id "0HNGFLN7R0J1S" received FIN.
+2025-10-20 10:54:44.813 +03:00 [DBG] Connection id "0HNGFLN7R0J1T" received FIN.
+2025-10-20 10:54:44.815 +03:00 [DBG] Connection id "0HNGFLN7R0J1S" disconnecting.
+2025-10-20 10:54:44.816 +03:00 [DBG] Connection id "0HNGFLN7R0J1T" disconnecting.
+2025-10-20 10:54:44.816 +03:00 [DBG] Connection id "0HNGFLN7R0J1U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-20 10:54:44.816 +03:00 [DBG] Connection id "0HNGFLN7R0J1S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-20 10:54:44.817 +03:00 [DBG] Connection id "0HNGFLN7R0J1T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-20 10:54:44.817 +03:00 [DBG] Connection id "0HNGFLN7R0J1U" disconnecting.
+2025-10-20 10:54:44.821 +03:00 [DBG] Connection id "0HNGFLN7R0J1U" stopped.
+2025-10-20 10:54:44.822 +03:00 [DBG] Connection id "0HNGFLN7R0J1S" stopped.
+2025-10-20 10:54:44.822 +03:00 [DBG] Connection id "0HNGFLN7R0J1T" stopped.
+2025-10-20 10:57:55.377 +03:00 [INF] Application is shutting down...
+2025-10-20 10:57:55.380 +03:00 [DBG] Hosting stopping
+2025-10-20 10:57:55.398 +03:00 [DBG] Hosting stopped

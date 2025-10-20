@@ -1,3 +1,3 @@
 ﻿namespace BookApi.CQRS.Queries;
 
-public record GetBookByIdQuery(int Id);
+public record GetBookByIdQuery(Guid Id);

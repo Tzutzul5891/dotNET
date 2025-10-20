@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tzutzu\\BookApi\\BookApi.csproj": {}
+    "/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/BookApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tzutzu\\BookApi\\BookApi.csproj": {
+    "/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/BookApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tzutzu\\BookApi\\BookApi.csproj",
+        "projectUniqueName": "/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/BookApi.csproj",
         "projectName": "BookApi",
-        "projectPath": "C:\\Users\\Tzutzu\\BookApi\\BookApi.csproj",
-        "packagesPath": "C:\\Users\\Tzutzu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tzutzu\\BookApi\\obj\\",
+        "projectPath": "/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/BookApi.csproj",
+        "packagesPath": "/Users/thinslicesacademy17/.nuget/packages/",
+        "outputPath": "/Users/thinslicesacademy17/RiderProjects/dotNET/Lab3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tzutzu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/thinslicesacademy17/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -44,6 +44,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.9, )"
@@ -57,6 +65,18 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[9.0.9, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -78,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
